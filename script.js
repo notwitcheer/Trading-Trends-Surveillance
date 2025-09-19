@@ -386,7 +386,6 @@ class CryptoTracker {
 class CORSProxyTracker extends CryptoTracker {
     constructor() {
         super();
-        // Using a CORS proxy service - you may need to change this
         this.proxyUrl = 'https://api.allorigins.win/raw?url=';
     }
 
