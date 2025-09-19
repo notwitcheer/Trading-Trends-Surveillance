@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTO TERMINAL v2.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    
+    <div class="container">
+        <header class="terminal-header">
+            <div class="header-line">
+                <span class="prompt">root@crypto-terminal:~$</span>
+                <span class="typing-text">INITIALIZING CRYPTO SURVEILLANCE SYSTEM...</span>
+                <a href="https://x.com/0xWitcheer" target="_blank" class="creator-attribution-link">
+                    <div class="creator-attribution">
+                        <img src="witcheer-pfp.png" alt="Witcheer" class="profile-pic" id="profile-pic">
+                        <span class="creator-name">by Witcheer</span>
+                    </div>
+                </a>
+            </div>
+            <div class="system-status">
+                <span class="status-indicator online"></span>
+                <span>API STATUS: ONLINE</span>
+                <span class="timestamp" id="current-time"></span>
+            </div>
+        </header>
+
+        <main class="terminal-content">
+            <!-- Monitored Tokens Section -->
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-title">[PRIORITY TARGETS]</span>
+                    <div class="scan-line"></div>
+                </div>
+                <div class="tokens-grid" id="monitored-tokens">
+                    <div class="loading-placeholder">SCANNING FOR TARGETS...</div>
+                </div>
+            </section>
+
+            <!-- Major Cryptos Section -->
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-title">[MAJOR ASSETS + TARGETS]</span>
+                    <div class="scan-line"></div>
+                </div>
+                <div class="crypto-list" id="major-cryptos">
+                    <div class="loading-placeholder">FETCHING DATA STREAMS...</div>
+                </div>
+            </section>
+
+            <!-- Top 5 Section -->
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-title">[TOP 5 BY MARKET CAP]</span>
+                    <div class="scan-line"></div>
+                </div>
+                <div class="top-list" id="top-cryptos">
+                    <div class="loading-placeholder">ANALYZING MARKET DATA...</div>
+                </div>
+            </section>
+
+            <!-- Trending Section -->
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-title">[TRENDING ASSETS]</span>
+                    <div class="scan-line"></div>
+                </div>
+                <div class="trending-list" id="trending-cryptos">
+                    <div class="loading-placeholder">DETECTING MARKET TRENDS...</div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="terminal-footer">
+            <div class="footer-line">
+                <span class="prompt">system@crypto-tracker:~$</span>
+                <span>SURVEILLANCE ACTIVE | AUTO-REFRESH: 30s</span>
+            </div>
+            <div class="refresh-controls">
+                <button id="refresh-btn" class="terminal-btn">MANUAL REFRESH</button>
+                <button id="toggle-auto" class="terminal-btn">TOGGLE AUTO</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
